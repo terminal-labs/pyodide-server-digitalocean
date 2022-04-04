@@ -27,7 +27,8 @@ resource "digitalocean_droplet" "web" {
 
   provisioner "remote-exec" {
     inline = [
-      "sudo apt install -y mlocate",
+      "sudo apt update",
+      "sudo apt -y upgrade",
     ]
   }
 }
