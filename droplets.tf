@@ -1,5 +1,5 @@
 data "digitalocean_ssh_key" "ssh_key" {
-  name = "your_ssh_key_name"
+  name = "Vagrant"
 }
 
 resource "digitalocean_droplet" "web" {
