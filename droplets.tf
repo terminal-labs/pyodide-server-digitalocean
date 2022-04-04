@@ -27,8 +27,8 @@ resource "digitalocean_droplet" "web" {
 
   provisioner "remote-exec" {
     inline = [
-      "sudo apt update",
-      "sudo apt -y upgrade",
+      "apt update",
+      "apt -y upgrade",
     ]
   }
 }
